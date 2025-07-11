@@ -1,0 +1,20 @@
+<footer>
+        <div>
+                <div>
+                        <a href="/tietosuoja">Tietosuojaselosteet</a>
+                        <a href="/omavalvonta">Omavalvonta</a>
+                        <a href="/yritys">Tietoa</a>
+                        <a href="/yhteystiedot">Ota yhteyttä</a>
+                </div>
+                <div>
+                        <a href="/"> © {{ now.Year }} {{ .Site.Params.yritys }} </a>
+                </div>
+                <div>
+                        {{ with .GitInfo }}
+                                {{- $pvm := .CommitDate }}
+                                {{- $format := "02-01-2006 15:04:05" }}
+                                {{ .AbbreviatedHash }} {{ $pvm.Format $format }}
+                        {{ end }}
+                </div>
+        </div>
+</footer>

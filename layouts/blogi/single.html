@@ -1,0 +1,5 @@
+{{ define "main" }}
+<h1> {{ .Params.otsikko }} </h1>
+<p> Päiväys: {{ .Date.Format "02-01-2006" }} </p>
+{{ .Content }}
+{{ end }}

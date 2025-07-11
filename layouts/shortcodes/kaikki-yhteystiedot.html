@@ -1,0 +1,105 @@
+<div class="yhteystiedot">
+
+        <div class="contact-unit">
+                {{ $mertokari := .Site.Data.yhteystiedot.mertokari }}
+                {{ range $mertokari }}
+                <div class="unit-name">{{ .nimi }}</div>
+                <div class="address">{{ .osoite }}</div>
+                <div class="general-contact">Hoitajien numero {{ .puh }} (24/7)</div>
+                {{ end }}
+
+                <div class="contact-person">
+                        <div>
+                                <!-- <div class="picture"><img src="/images/rm.jpg" /></div> -->
+                        </div>
+                        <div>
+                                {{ $riitta := .Site.Data.yhteystiedot.riitta }}
+                                {{ range $riitta }}
+                                <div class="name">{{ .nimi }}</div>
+                                <div class="title">{{ .rooli }}</div>
+                                <div class="phone">{{ .puh }}</div>
+                                <div class="email"><a href="mailto:{{ .email }}">{{ .email }}</a>
+                                </div>
+                                {{ end }}
+                        </div>
+                </div>
+
+                <div class="contact-person">
+                        <div>
+                                <!-- <div class="picture"><img src="/images/iw.jpg" /></div> -->
+                        </div>
+                        <div>
+                                {{ $ida := .Site.Data.yhteystiedot.ida }}
+                                {{ range $ida }}
+                                <div class="name">{{ .nimi }}</div>
+                                <div class="title">{{ .rooli }}</div>
+                                <div class="phone">{{ .puh }}</div>
+                                <div class="email"><a href="mailto:{{ .email }}">{{ .email }}</a>
+                                </div>
+                                {{ end }}
+                        </div>
+                </div>
+
+                <div class="contact-person">
+                        <div>
+                                <!-- <div class="picture"><img src="/images/aw.jpg" /></div> -->
+                        </div>
+                        <div>
+                                {{ $ada := .Site.Data.yhteystiedot.ada }}
+                                {{ range $ada }}
+                                <div class="name">{{ .nimi }}</div>
+                                <div class="title">{{ .rooli }}</div>
+                                <div class="phone">{{ .puh }}</div>
+                                <div class="email"><a href="mailto:{{ .email }}">{{ .email }}</a></div>
+                                <div>{{ .laskutus }}: <a class="email" href="mailto:{{ .laskutusmail }}">{{
+                                                .laskutusmail }}</a></div>
+                                {{ end }}
+                        </div>
+                </div>
+        </div>
+
+        <div class="contact-unit">
+                {{ $alavus := .Site.Data.yhteystiedot.alavus }}
+                {{ range $alavus }}
+                <div class="unit-name">{{ .nimi }}</div>
+                <div class="address">{{ .osoite }}</div>
+                <div class="general-contact">Hoitajien numero {{ .puh }} (7-21)</div>
+                {{ end }}
+
+                <div class="contact-person">
+                        <div>
+                                <!-- <div class="picture"><img src="/images/mm.jpg" /></div> -->
+                        </div>
+                        <div>
+                                {{ $maija := .Site.Data.yhteystiedot.maija }}
+                                {{ range $maija }}
+                                <div class="name">{{ .nimi }}</div>
+                                <div class="title">{{ .rooli }}</div>
+                                <div class="phone">{{ .puh }}</div>
+                                <div class="email"><a href="mailto:{{ .email }}">{{ .email }}</a>
+                                </div>
+                                {{ end }}
+                        </div>
+                </div>
+
+        </div>
+
+        <div class="contact-unit">
+                <div class="unit-name">Lilja-kotihoito ja kotipalvelu</div>
+                <div class="contact-person">
+                        <div>
+                                <!-- <div class="picture"><img src="/images/lt.jpg" /></div> -->
+                        </div>
+                        <div>
+                                {{ $lilja := .Site.Data.yhteystiedot.lilja }}
+                                {{ range $lilja }}
+                                <div class="name">{{ .nimi }}</div>
+                                <div class="title">{{ .rooli }}</div>
+                                <div class="phone">{{ .puh }}</div>
+                                <div class="email"><a href="mailto:{{ .email }}">{{ .email }}</a>
+                                </div>
+                                {{ end }}
+                        </div>
+                </div>
+        </div>
+</div>

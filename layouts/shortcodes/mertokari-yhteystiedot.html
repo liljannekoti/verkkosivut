@@ -1,0 +1,49 @@
+<div class="mertokarin-yhteystiedot">
+        {{ $mertokari := .Site.Data.yhteystiedot.mertokari }}
+        {{ range $mertokari }}
+        <div class="contact-unit">
+                <div class="name">
+                        <h3> Mertokarin yksikkö </h3>
+                </div>
+
+                <div> Liljanne-koti Oy, {{ .nimi }} </div>
+                <div class="address"> {{ .osoite }} </div>
+
+                <div class="phone"> puh <strong>{{ .puh }}</strong> (24/7) </div>
+
+                <div class="email"><a href="mailto:{{ .email }}">{{ .email }}</a></div>
+
+        </div>
+        {{ end }}
+        <div class="contact-person">
+                <div>
+                        <!-- <div class="picture"><img src="/images/rm.jpg" /></div> -->
+                </div>
+                <div>
+                        {{ $riitta := .Site.Data.yhteystiedot.riitta }}
+                        {{ range $riitta }}
+                        <div class="name">{{ .nimi }}</div>
+                        <div class="title">{{ .rooli }}</div>
+                        <div class="phone">{{ .puh }}</div>
+                        <div class="email"><a href="mailto:{{ .email }}">{{ .email }}</a>
+                        </div>
+                        {{ end }}
+                </div>
+        </div>
+
+        <div class="contact-person">
+                <div>
+                        <!-- <div class="picture"><img src="/images/iw.jpg" /></div> -->
+                </div>
+                <div>
+                        {{ $ida := .Site.Data.yhteystiedot.ida }}
+                        {{ range $ida }}
+                        <div class="name">{{ .nimi }}</div>
+                        <div class="title">{{ .rooli }}</div>
+                        <div class="phone">{{ .puh }}</div>
+                        <div class="email"><a href="mailto:{{ .email }}">{{ .email }}</a>
+                        </div>
+                        {{ end }}
+                </div>
+        </div>
+</div>

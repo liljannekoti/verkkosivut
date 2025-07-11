@@ -1,0 +1,13 @@
+{{ define "main" }}
+<h1> Uutiset ja tiedotteet </h1>
+<div class="blog">
+        {{ range .Pages }}
+        <a href="{{ .RelPermalink }}">
+                <div>
+                <h2>{{ .Params.otsikko}}</h2>
+                <p> {{ .Params.kuvaus }} </p>
+                </div>
+        </a>
+        {{ end }}
+</div>
+{{ end }}

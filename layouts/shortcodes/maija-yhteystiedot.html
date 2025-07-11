@@ -1,0 +1,14 @@
+<div class="contact-person">
+        <div>
+        <!--         <div class="picture"><img src="/images/mm.jpg" alt="" /></div> -->
+        </div>
+        <div>
+                {{ $maija := .Site.Data.yhteystiedot.maija }}
+                {{ range $maija }}
+                <div class="name">{{ .nimi }}</div>
+                <div class="title">{{ .rooli }}</div>
+                <div class="phone">{{ .puh }}</div>
+                <div class="email"><a href="mailto:{{ .email }}">{{ .email }}</a></div>
+                {{ end }}
+        </div>
+</div>

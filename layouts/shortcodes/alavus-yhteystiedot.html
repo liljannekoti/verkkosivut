@@ -1,0 +1,32 @@
+<div class="yksikon-yhteystiedot">
+        {{ $alavus := .Site.Data.yhteystiedot.alavus }}
+        {{ range $alavus }}
+        <div class="contact-unit">
+                <div class="name">
+                        <h3>Yksikön yhteystiedot</h3>
+                </div>
+
+                <div> Liljanne-koti Oy, {{ .nimi }} </div>
+                <div class="address"> {{ .osoite }} </div>
+
+                <div class="phone"> puh <strong>{{ .puh }}</strong> (7-21) </div>
+
+                <div class="email"><a href="mailto:{{ .email }}">{{ .email }}</a></div>
+                {{ end }}
+
+        </div>
+        <div class="contact-person">
+                <div>
+                        <!-- <div class="picture"><img src="/images/mm.jpg" /></div> -->
+                </div>
+                <div>
+                        {{ $maija := .Site.Data.yhteystiedot.maija }}
+                        {{ range $maija }}
+                        <div class="name">{{ .nimi }}</div>
+                        <div class="title">{{ .rooli }}</div>
+                        <div class="phone">{{ .puh }}</div>
+                        <div class="email"><a href="mailto:{{ .email }}">{{ .email }}</a></div>
+                        {{ end }}
+                </div>
+        </div>
+</div>

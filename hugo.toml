@@ -1,0 +1,24 @@
+baseURL = 'https://liljannekoti.fi/'
+languageCode = 'fi'
+title = 'Liljanne-koti Oy'
+enableRobotsTXT = true
+enableGitInfo = true
+renderer.unsafe = true
+
+[params]
+yritys = 'Liljanne-koti Oy'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-XXXXXXXXX'

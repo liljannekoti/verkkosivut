@@ -1,0 +1,15 @@
+<h1>Uutiset ja tiedotteet</h1>
+
+<div class="blog">
+        {{- range where .Site.RegularPages.ByTitle "Type" "blogi" }}
+        {{- $pvm := .Params.date }}
+        {{- $format := "02-01-2006" }}
+        <a href="{{ .RelPermalink }}">
+                <div>
+                        <h3>{{ .Params.otsikko }}</h3>
+                        <p> Päivätty: ({{ $pvm.Format $format }}) </p>
+                        <p> {{ .Params.kuvaus }} </p>
+                </div>
+        </a>
+        {{ end }}
+</div>
