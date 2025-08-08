@@ -24,7 +24,7 @@ Hoivayksikössä käy paljon vierailijoita ja he ovat meille tervetulleita millo
 
 </div>
 <div>
-<img src="https://liljannekoti.fi/kuvat/alavudenyksikko_edesta.png" alt="">
+<img src="/images/a.png" alt="">
 </div>
 </div>
 

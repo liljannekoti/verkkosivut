@@ -39,7 +39,7 @@ täytössä tai muuten tukemaan oman kotinsa arkea.
 
 <div class="content-splitter">
 <div id="mertokari-img">
-<img src="https://liljannekoti.fi/kuvat/mertokarinyksikko_edesta.png">
+<img src="/images/mk.webp">
 </div>
 <div>
 

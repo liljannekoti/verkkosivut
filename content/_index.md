@@ -29,15 +29,15 @@ sitemap:
 
 <div class="etusivun-linkit">
         <a href="/yksikot/mertokari">
-                <img src="https://liljannekoti.fi/kuvat/alavudenyksikko_edesta.png" alt="">
+                <img src="/images/mk.webp" alt="">
                 <h2>Mertokari</h2>
         </a>
         <a href="/yksikot/alavus">
-                <img src="https://liljannekoti.fi/kuvat/alavudenyksikko_edesta.png" alt="">
+                <img src="/images/a.png" alt="">
                 <h2>Alavus</h2>
         </a>
         <a href="/yksikot/kotipalvelu">
-                <img src="https://liljannekoti.fi/kuvat/alavudenyksikko_edesta.png" alt="">
+                <img src="/images/mkl.png" alt="">
                 <h2>Kotipalvelut</h2>
         </a>
 </div>

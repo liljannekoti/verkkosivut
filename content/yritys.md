@@ -45,7 +45,7 @@ Vuoden 2016 terveydenedistäjä Virroilla ja [Alavus-mitalin vuonna 2018](https:
 
 </div>
     <div>
-        <img src="https://cdn.pixabay.com/photo/2022/08/01/21/44/lily-7359060_1280.jpg">
+        <img src="/images/lilja.jpg">
     </div>
 </div>
 
